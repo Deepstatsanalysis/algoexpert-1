@@ -6,4 +6,4 @@ def fib(n):
     return k[1] if n > 1 else k[0]
 
 
-print(fib(20))
+print(fib(10))
