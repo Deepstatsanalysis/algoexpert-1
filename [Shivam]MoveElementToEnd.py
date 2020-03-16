@@ -34,7 +34,7 @@ def moveend(arr,tar):
 
     return arr
 
-print(moveend([2,1,2,2,3,4,2],2))          
+print(moveend([2,2,2,1,2,2,2],2))          
            
 
 
