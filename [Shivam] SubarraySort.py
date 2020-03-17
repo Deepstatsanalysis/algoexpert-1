@@ -38,7 +38,7 @@ def SubarrySort(arr):
     for k in range(len(arr)-1,-1,-1):
          if currmax >= arr[k]:
             max1=k
-            print(arr[k],k)
+            
             break
 
 
