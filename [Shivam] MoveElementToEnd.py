@@ -30,11 +30,11 @@ def moveend(arr,tar):
             
             continue
 
-      
+    
 
     return arr
 
 print(moveend([2,2,2,1,2,2,2],2))          
-           
+        
 
 
