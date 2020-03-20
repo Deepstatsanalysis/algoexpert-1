@@ -6,9 +6,7 @@ def solve(arr,call=1):
         if type(i)==int:
             n+=i
         else:
-            call+=1
-            n+=solve(i,call)
-            call-=1
+            n+=solve(i,call+1)
     return n*call
 
 print(solve(list))
