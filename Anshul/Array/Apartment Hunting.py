@@ -46,6 +46,6 @@ def check(blocks,elements):
 
 
 print(check(blocks,elements))
-        
-// Test
+
+# SSH TEST
     
