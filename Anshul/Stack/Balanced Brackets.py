@@ -1,13 +1,14 @@
-brackets = '(([]()()){})'
+brackets = '{(([]()([])){})}'
 # sol 1
 def solve(arr, stack=[]):
-    d = {'[':']','{':'}','(':')'}
-    d2 = {']':'[','}':'{',')':'('}
+    d = {']':'[','}':'{',')':'('}
     for i in arr:
-        if i in d:
+        if i not in d:
             stack.append(i)
         else:
-            if d2[i] == stack[-1]:
+            if stack == []:
+                return False
+            elif d[i] == stack[-1]:
                 print(stack)
                 stack.pop()
 
