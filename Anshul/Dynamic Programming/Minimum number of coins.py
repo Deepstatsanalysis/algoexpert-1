@@ -8,4 +8,4 @@ def minimumnumberofcoins(value,coins):
                dict[i] = min( dict[i] , dict[i-j] + 1)
     return dict[value] 
 
-print(minimumnumberofcoins(63,[1,2,10]))
+print(minimumnumberofcoins(6,[1,2,4]))
