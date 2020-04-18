@@ -22,7 +22,7 @@ def check(string, i, j,jk):
         jk.append(string[i:j+1])
         return
 
-print(lps(string))
+print('Mine : ',lps(string))
 
 
 # Chutiye ka Sol
@@ -45,4 +45,4 @@ def getLP(string, lI, rI):
         rI +=1
     return [lI +1, rI]
 
-print(longestP(string))
+print('Algo : ',longestP(string))
