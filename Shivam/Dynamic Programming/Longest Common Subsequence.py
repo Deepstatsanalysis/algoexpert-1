@@ -3,13 +3,14 @@ def lcs(str1,str2):
     for i in range(1,len(str2)+1):
         for j in range(1,len(str1)+1):
             if str2[i-1]==str1[j-1]:
-                array[i][j]=[str2[i-1],array[i-1][j-1][1],i-1,j-1]
+                array[i][j]=[str2[i-1],array[i-1][j-1][1]+1,i-1,j-1]
 
             else:
                 if array[i][j-1][1] > array[i-1][j][1]:
                     array[i][j]=[None,array[i][j-1][1],i,j-1]
                 else:
                     array[i][j]=[None,array[i-1][j][1],i-1,j]
+                   
 
     return sequence(array)
 
@@ -25,8 +26,10 @@ def sequence(array):
 
         i=curr[2]
         j=curr[3]
+          
 
     return list(reversed(seq)) 
+
 
 
 print(lcs('xkykzpw','zxvvyzw'))           

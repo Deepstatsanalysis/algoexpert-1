@@ -46,3 +46,21 @@ def bracket(n,k,m):  # 3 ,6
 for i,e in enumerate (testCase):
     print(bracket(testCase[i][0],testCase[i][1],i))
 
+
+
+
+
+
+ def search(self, nums: List[int], target: int) -> int:
+        def h(l,r):
+            if l > r:
+                return -1
+            m = (r+l)//2
+            if nums[m] == target:
+                return m
+            
+            if nums[l] <= target < nums[m] or (nums[m] <= nums[r]  and not nums[m] < target <= nums[r]):
+                return h(l,m-1)
+            else: 
+                return h(m+1, r)
+        return h(0,len(nums)-1)

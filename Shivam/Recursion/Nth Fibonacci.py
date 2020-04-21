@@ -18,4 +18,6 @@ def fibb(n):
         arr[1]=nextfib
         count+=1
 
-    return arr[1] if n>1 else arr[0]                    
+    return arr[1] if n>1 else arr[0]   
+
+print(fibb(3))                     
