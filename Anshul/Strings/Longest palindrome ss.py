@@ -1,4 +1,4 @@
-string = 'abaxyzzyxflwgbauufnsrkjbsichutiyatohtuhaiiahuthotayituhcamwlmfkanwgsngnabghgba'
+string = 'abaxyzzyxf'
 
 # My Sol
 def lps(string,jk = []):
